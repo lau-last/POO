@@ -1,0 +1,19 @@
+<?php
+
+//Inclusion du fichier
+require_once '../src/App/Entity/Article';
+use App\Entity\Article;
+
+//Création d'un objet INSTANCIATION
+//INSTANCE = objet !!
+$article_1 = new Article();
+
+$article_1->setReference('AAA');
+$article_1->setTradeName('trade name');
+$article_1->setDescription('c\'est un article');
+
+echo $article_1->getReference();
+echo $article_1->getDescription();
+echo $article_1->getTradeName();
+
+var_dump($article_1);
